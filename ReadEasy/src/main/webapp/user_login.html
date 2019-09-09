@@ -1,0 +1,60 @@
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>User Login</title>
+<link href="css/bootstrap.css" type="text/css" rel="stylesheet">
+<script src="js/bootstrap.js" type="text/javascript"></script>
+</head>
+<style>
+ body{
+     background-image: url("images/back.png");
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     margin: 0%;
+     padding: 0%;
+ }
+ .form-control{
+     position: absolute;
+     height: 350px;
+     width: 300px;
+     left: 39%;
+     top: 25%;
+     border-radius: 10px;
+     
+
+ }
+ input{
+     width: 250px;
+     margin-top: 10px;
+ }
+#user{
+ margin-top: 90px;;
+}
+img{
+ position: absolute;
+ width: 150px;
+ height: 150px;
+ top: -23%;
+ left: 25%;
+}
+.btn{
+ margin-top: 35px;
+}
+#user,#pass{
+ height: 35px;
+}
+</style>
+<body>
+
+<center>
+ <form action="SignIn" class="form-control" method="post" >
+  <img alt="User Icon" src="images/user.png">
+  <input id="user" type="text" name="email" required="required" placeholder="Enter Email Id" id="user"><br>
+  <input id="pass" type="password" name="password" required="required" placeholder="Enter Password" id="pass"><br>
+  <input type="submit" value="Sign In" class="btn btn-outline-success">
+ </form>
+</center>
+
+</body>
+</html>
